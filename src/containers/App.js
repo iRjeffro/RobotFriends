@@ -7,20 +7,8 @@ import './App.css';
 
 
 function App () {
-    // constructor() {
-    //     super();
-    //     this.state = {
-    //         robots: [],
-    //         searchfield: ''
-    //     }
-
-  const [robots, setRobots] = useState([]);
-  const [searchfield, setSearchfield] = useState('');
-
-    // componentDidMount() {
-    //     fetch('https://jsonplaceholder.typicode.com/users').then(response => response.json()).then(users => setRobots: users);
-        
-    // }
+    const [robots, setRobots] = useState([]);
+    const [searchfield, setSearchfield] = useState('');
 
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/users')
